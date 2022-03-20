@@ -19,6 +19,8 @@ public class largest_seq_char{
         for(int i=0;i<max;i++){
             System.out.print(result);
         }
+
+        sc.close();
         
     }
 }
