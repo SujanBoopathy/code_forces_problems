@@ -2,7 +2,8 @@
 using namespace std;
 
 int main(){
-    int n,m,c=0;
+    int n,m;
+    long long int c=0;
     cin>>n>>m;
     int a[m];
     for(int i=0;i<m;i++){
