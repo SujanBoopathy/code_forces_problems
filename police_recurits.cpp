@@ -6,8 +6,8 @@ int main(){
     for(int i=0;i<n;i++){
         int temp;
         cin>>temp;
-        if(temp==1){
-            police++;
+        if(temp>=1){
+            police+=temp;
         }
         else{
             if(police>0){
@@ -18,6 +18,6 @@ int main(){
             }
         }
     }
-    cout<<unsolved;
+    cout<<unsolved<<endl;
     return 0;
 }
