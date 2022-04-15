@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int main(){
     int n;
@@ -10,10 +11,11 @@ int main(){
         for(int j=0;j<size;j++){
             cin>>a[j];
         }
+        sort(a,a+size);
         int index=0,f=0;
         for(int k=index+1;k<size;k++){
             if(a[k]-a[index]<=1){
-                continue;
+                index=k;
             }
             else{
                 f=1;
