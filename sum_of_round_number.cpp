@@ -23,7 +23,7 @@ int main(){
             a[d++]=num-rem;
             num%=10;
         }
-        if(num<10 && num>=0){
+        if(num<10 && num>0){
             a[d++]=num;
         }
         vector<int> v;
