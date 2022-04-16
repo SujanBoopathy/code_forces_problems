@@ -1,25 +1,40 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 int main(){
     int n;
     cin>>n;
-    for(int i=0;i<n;i++){
-        int num,count=0,k=0;
+    int a[10000];
+    while(n--){
+        int num,rem,d=0;
         cin>>num;
-        int a[10000];
-        for(int j=1;num%10!=0;j=j*10){
-            a[k]=num%10*j;
-            if(num%10==0)
-                break;
-            num/=10;
-            k++;
+        if(num>=1000){
+            rem=num%1000;
+            a[d++]=num-rem;
+            num%=1000;
         }
-        a[k]=num;
-        cout<<k+1<<endl;
-        for(int in=0;in<=k;in++){
-            cout<<a[in]<<" ";
+        if(num>=100){
+            rem=num%100;
+            a[d++]=num-rem;
+            num%=100;
         }
-        cout<<"\n\n----------------"<<endl;
+        if(num>=10){
+            rem=num%10;
+            a[d++]=num-rem;
+            num%=10;
+        }
+        if(num<10 && num>=0){
+            a[d++]=num;
+        }
+        vector<int> v;
+        for(int i=0;i<d;i++){
+            v.push_back(a[i]);
+        }
+        cout<<v.size()<<endl;
+        for(int i=0;i<v.size();i++){
+            cout<<v[i]<<" ";
+        }
+        cout<<endl;
     }
     return 0;
 }
