@@ -1,4 +1,3 @@
-import java.io.*;
 import java.util.*;
 
 public class BalancedArray{
@@ -25,7 +24,7 @@ public class BalancedArray{
                 System.out.print("\n");
             }
             
-            
+            sc.close();
         }
     }
 }
