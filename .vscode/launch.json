@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch BalancedArray",
+            "request": "launch",
+            "mainClass": "BalancedArray",
+            "projectName": "code-forces_9da571ed"
+        },
+        {
+            "type": "java",
+            "name": "Launch beautiful_year",
+            "request": "launch",
+            "mainClass": "beautiful_year",
+            "projectName": "code-forces_9da571ed"
+        },
+        {
+            "type": "java",
+            "name": "Launch largest_seq_char",
+            "request": "launch",
+            "mainClass": "largest_seq_char",
+            "projectName": "code-forces_9da571ed"
+        },
+        {
+            "type": "java",
+            "name": "Launch largest_sum_int",
+            "request": "launch",
+            "mainClass": "largest_sum_int",
+            "projectName": "code-forces_9da571ed"
+        },
+        {
+            "type": "java",
+            "name": "Launch two_int_problem",
+            "request": "launch",
+            "mainClass": "two_int_problem",
+            "projectName": "code-forces_9da571ed"
+        }
+    ]
+}
