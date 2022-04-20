@@ -24,7 +24,7 @@ public class BalancedArray{
                 System.out.print("\n");
             }
             
-            sc.close();
+            
         }
     }
 }
