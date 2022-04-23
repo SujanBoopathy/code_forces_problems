@@ -1,39 +1,16 @@
 #include<iostream>
-#include<vector>
-#include<algorithm>
 using namespace std;
-int findMin(int a,int b,int c){
-    if(a<b and a<c)
-        return a;
-    else if(b<a and b<c)
-        return b;
-    else
-        return c;
-}
 int main(){
-    int n,t,p=0,m=0,s=0;
+    int team[4][5001],ma[4],n,ans,b;
     cin>>n;
-    vector<int> vect;
-    vector<int> a,b,c;
-    for(int i=0;i<n;i++){
-        cin>>t;
-        vect.push_back(t);
-        if(t==1){
-            p++;
-            a.push_back(i);
-        } 
-        else if(t==2){
-            m++;
-            b.push_back(i);
-        }
-        else{
-            s++;
-            c.push_back(i);
-        }
+    for(int i=1;i<=n;i++){
+        cin>>b; 
+        team[b][ma[b]++]=i;
     }
-    int res=findMin(p,m,s);
-    cout<<res<<endl;
-    
-    
+    ans=min(ma[1],min(ma[2],ma[3]));
+    cout<<ans<<endl;
+    for(int i=0;i<ans;i++){
+        cout<<team[1][i]<<" "<<team[2][i]<<" "<<team[3][i]<<endl;
+    }
     return 0;
 }
