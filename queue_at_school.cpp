@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
-
-int main(){
+void main(){
     int n,x;
     cin>>n>>x;
     char s[n];
@@ -17,5 +16,5 @@ int main(){
         }
     }
     cout<<s<<endl;
-    return 0;
+
 }
