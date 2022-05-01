@@ -5,8 +5,9 @@ int main(){
     cin>>n;
     while(n--){
         cin>>a>>b; 
-        int m=max(a,b)*2;
-        cout<<m*m<<endl;
+        if(a>b)
+            swap(a,b);
+        cout<<max(a*2,b)*max(a*2,b)<<endl;
     }
     return 0;
 }
