@@ -9,7 +9,7 @@ int main(){
         cin>>a;
         vector<int> v;
         while(v.size()!=a){
-            if(i%3!=0 && i%10!=10){
+            if(i%3!=0 && i%10!=3){
                 v.push_back(i);
             }
             i++;   
