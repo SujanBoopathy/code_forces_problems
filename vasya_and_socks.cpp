@@ -1,16 +1,17 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,m;
+    int n,m,a,b;
     cin>>n>>m;
-    int i=1,count=0;
-    for(i=1;i<=n;i++){
-        if(i%m==0){
-            count++;
-        }
-        count++;
+    int count=n;
+    while(1){
+        a=n/m;
+        b=a+(n%m);
+        n=b;
+        count+=a;
+        if(b<m)
+            break;
     }
-    if(count%m==0) count++;
     cout<<count<<endl;
     return 0;
 }
