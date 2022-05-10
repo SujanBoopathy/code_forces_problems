@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
+    long int n;
     cin>>n;
     while(n--){
-        int testcase,temp,c1=0,c2=0;
+        long int testcase,temp,c1=0,c2=0;
         cin>>testcase;
-        for(int i=0;i<testcase;i++){
+        for(long int i=0;i<testcase;i++){
             cin>>temp;
             if(temp==1)
                 c1++;
