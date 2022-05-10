@@ -1,22 +1,39 @@
 #include<iostream>
 using namespace std;
 int main(){
-    long int n;
-    cin>>n;
-    while(n--){
-        long int testcase,temp,c1=0,c2=0;
-        cin>>testcase;
-        for(long int i=0;i<testcase;i++){
+    long long int tc,n;
+    cin>>tc;
+    while(tc--){
+        cin>>n;
+        int temp;
+        for(long long int i=0;i<tc;i++){
+            long long int sum=0,c1=0;
             cin>>temp;
-            if(temp==1)
+            if(temp==1){
                 c1++;
-            else 
-                c2++;
+                sum++;
+            }
+            else{
+                sum+=2;
+            }
+
+            if(sum%2==0){
+                int div=sum/2;
+                if(div%2==0){
+                    cout<<"YES"<<endl;
+                }
+                else{
+                    if(c1){
+                        cout<<"YES"<<endl;
+                    }
+                    else{
+                        cout<<"NO"<<endl;
+                    }
+                }
+            }
+            else{
+                cout<<"NO"<<endl;
+            }
         }
-        if(c1%2==0 && c2%2==0)
-            cout<<"YES"<<endl;
-        else
-            cout<<"NO"<<endl;
     }
-    return 0;
 }
