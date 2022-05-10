@@ -6,8 +6,8 @@ int main(){
     while(tc--){
         cin>>n;
         int temp;
-        for(long long int i=0;i<tc;i++){
-            long long int sum=0,c1=0;
+        long long int sum=0,c1=0;
+        for(long long int i=0;i<n;i++){            
             cin>>temp;
             if(temp==1){
                 c1++;
@@ -17,6 +17,8 @@ int main(){
                 sum+=2;
             }
 
+        }
+        
             if(sum%2==0){
                 int div=sum/2;
                 if(div%2==0){
@@ -34,6 +36,5 @@ int main(){
             else{
                 cout<<"NO"<<endl;
             }
-        }
     }
 }
