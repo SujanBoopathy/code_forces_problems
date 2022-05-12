@@ -9,9 +9,10 @@ public:
                 if(list1[i]==list2[j]){
                     if(i+j<m){
                         m=i+j;
+                        v.clear();
                         v.insert(list1[i]);
                     }
-                    if(i+j==m){
+                    else if(i+j==m){
                         v.insert(list1[i]);
                     }
                 }
