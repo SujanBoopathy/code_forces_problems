@@ -2,19 +2,23 @@
 using namespace std;
 int main(){
     int n;
-    long long int num;
     cin>>n;
-    while(n--){
+    long long int num;
+    
+    for(int i=0;i<n;i++){
         cin>>num;
-        int flag=0;
-        for(long long int i=3;i<num/2;i+=2){
-            if(num%i==0)
-                flag=1;
-        }
-        if(flag)
+        if(num%2!=0)
             cout<<"YES"<<endl;
-        else
-            cout<<"NO"<<endl;
+        else{
+            while(n%2==0){
+                n/=2;
+            }
+            if(n>1)
+                cout<<"YES"<<endl;
+            else
+                cout<<"NO"<<endl;
+                
+        }
     }
     return 0;
 }
