@@ -1,23 +1,27 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cin>>n;
-    long long int num;
-    
-    for(int i=0;i<n;i++){
-        cin>>num;
-        if(num%2!=0)
+    long long int t,n;
+    cin>>t;
+    while(t--){
+        cin>>n;
+        if(n&1){
             cout<<"YES"<<endl;
+        }
         else{
-            while(n%2==0){
-                n/=2;
+            bool ok=false;
+            long long int div=n;
+            while(div>2){
+                div/=2;
+                if(div & 1){
+                    if(n%div==0){
+                        ok=true;
+                        break;
+                    }
+                }
             }
-            if(n>1)
-                cout<<"YES"<<endl;
-            else
-                cout<<"NO"<<endl;
-                
+            if(ok) cout<<"YES"<<endl;
+            else cout<<"NO"<<endl;
         }
     }
     return 0;
