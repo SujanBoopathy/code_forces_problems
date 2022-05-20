@@ -6,7 +6,12 @@ int main(){
     while(testcase--){
         int num;
         cin>>num;
-        if()
+        if(num%6==0){
+            num/=6;
+        }
+        else{
+            num*=2;
+        }
     }
     return 0;
 }
