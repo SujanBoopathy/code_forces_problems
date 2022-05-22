@@ -17,7 +17,9 @@ int main(){
             n=n-reduce(fact);
             count++;
         }
-        
+        else{
+            break;
+        }
         fact++;
         
     }
