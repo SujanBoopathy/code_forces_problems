@@ -1,17 +1,13 @@
 #include<iostream>
 using namespace std;
-
-int main(){
-    int n,m,squares,count;
+void main(){
+    int n,m,square,count;
     cin>>n>>m;
 
-    squares=n*m;
+    square=n*m;
     
-    count=squares/2;
+    count=square/2;
 
     cout<<count<<endl;
 
-
-
-    return 0;
 }
