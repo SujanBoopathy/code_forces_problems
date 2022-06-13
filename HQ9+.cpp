@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     int flag=0;
     string s;
     cin>>s;
@@ -11,5 +11,5 @@ int main(){
     }
     if(flag==0) cout<<"NO"<<endl;
     else cout<<"YES"<<endl;
-    return 0;
+    
 }
