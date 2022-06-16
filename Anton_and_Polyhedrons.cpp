@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     int n,c=0;
     cin>>n;
     string s;
@@ -26,5 +26,6 @@ int main(){
         }
     }
     cout<<c<<endl;
-    return 0;
+    
+
 }
