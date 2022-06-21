@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     int n,m;
     cin>>n>>m;
     int mVal=min(m,n);
@@ -10,5 +10,5 @@ int main(){
     else{
         cout<<"Akshat"<<endl;
     }
-    return 0;
+    
 }
