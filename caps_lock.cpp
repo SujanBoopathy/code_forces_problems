@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     string s;
     cin>>s;
     bool c=true;
@@ -22,5 +22,5 @@ int main(){
     else{
         cout<<s;
     }
-    return 0;
+    
 }
