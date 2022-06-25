@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+void main(){
     int n,a,b,count=0;
     cin>>n;
     for(int i=0;i<n;i++){
@@ -11,5 +11,5 @@ int main(){
         else
             cout<<0<<endl;
     }
-    return 0;
+    
 }
