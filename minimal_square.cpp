@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     int n,a,b;
     cin>>n;
     while(n--){
@@ -9,5 +9,5 @@ int main(){
             swap(a,b);
         cout<<max(a*2,b)*max(a*2,b)<<endl;
     }
-    return 0;
+    
 }
