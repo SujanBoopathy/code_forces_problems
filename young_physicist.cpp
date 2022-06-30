@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+void main(){
     int n;
     cin>>n;
     int x,y,z,xsum=0,ysum=0,zsum=0;
@@ -16,5 +16,5 @@ int main(){
     else
         cout<<"NO"<<endl;
     
-    return 0;
+    
 }
