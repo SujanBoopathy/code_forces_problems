@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     long long int tc,n;
     cin>>tc;
     while(tc--){
