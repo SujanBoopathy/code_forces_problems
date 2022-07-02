@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
+void main(){
     string s,a;
     a="hello";
     cin>>s;
@@ -16,5 +16,5 @@ int main(){
     }
     if(pass==5) cout<<"YES"<<endl;
     else cout<<"NO"<<endl;
-    return 0;
+    
 }
