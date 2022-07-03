@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     int n,count=0;
     cin>>n;
     int a[n],b[n];
@@ -19,5 +19,5 @@ int main(){
         }
     }
     cout<<count<<endl;
-    return 0;
+    
 }
