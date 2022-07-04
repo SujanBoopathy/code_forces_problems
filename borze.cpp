@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     string s,res="";
     cin>>s;
     for(int i=0;i<s.length();i++){
@@ -18,5 +18,5 @@ int main(){
         }
     }
     cout<<res<<endl;
-    return 0;
+    
 }
