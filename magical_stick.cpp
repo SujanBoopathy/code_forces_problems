@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main(){
+void main(){
     int n;
     cin>>n;
     while(n--){
@@ -8,5 +8,5 @@ int main(){
         cin>>num;
         cout<<num/2+num%2<<endl;
     }
-    return 0;
+    
 }
