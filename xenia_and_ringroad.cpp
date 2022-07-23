@@ -5,17 +5,17 @@ int main(){
     int n,m;
     long long int c=0;
     cin>>n>>m;
-    int a[m];
+    int arr[m];
     for(int i=0;i<m;i++){
-        cin>>a[i];
+        cin>>arr[i];
     }
-    c=a[0]-1;
+    c=arr[0]-1;
     for(int i=0;i<m-1;i++){
-        if(a[i]>a[i+1]){
-            c+=(n-a[i])+(a[i+1]-1)+1;
+        if(arr[i]>arr[i+1]){
+            c+=(n-arr[i])+(arr[i+1]-1)+1;
         }
         else{
-            c+=a[i+1]-a[i];
+            c+=arr[i+1]-arr[i];
         }
     }
     cout<<c<<endl;
