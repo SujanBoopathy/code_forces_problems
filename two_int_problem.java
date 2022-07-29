@@ -2,12 +2,12 @@ import java.util.*;
 import java.lang.*;
 public class two_int_problem{
     public static void main(String[] args) {
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
+        Scanner scan=new Scanner(System.in);
+        int n=scan.nextInt();
         for(int i=0;i<n;i++){
             int a,b;
-            a=sc.nextInt();
-            b=sc.nextInt();
+            a=scan.nextInt();
+            b=scan.nextInt();
             if(a==b){
                 System.out.println("0");
             }
