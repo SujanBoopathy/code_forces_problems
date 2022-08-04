@@ -3,14 +3,14 @@
 using namespace std;
 
 int main(){
-    char s[20];
+    char str[20];
     cout<<"Enter string: ";
-    cin>>s;
+    cin>>str;
 
     int flag=0;
-    int len=strlen(s);
+    int len=strlen(str);
     for(int i=0;i<len;i++){
-        if(s[i]!=s[len-i-1]){
+        if(str[i]!=str[len-i-1]){
             flag=1; 
             break;
         }
