@@ -2,13 +2,13 @@
 #include<algorithm>
 using namespace std;
 int main(){
-    int a[4];
+    int arr[4];
     for(int i=0;i<4;i++){
-        cin>>a[i];
+        cin>>arr[i];
     }
-    sort(a,a+4);
+    sort(arr,arr+4);
     for(int i=0;i<3;i++){
-        cout<<a[3]-a[i]<<" ";
+        cout<<arr[3]-arr[i]<<" ";
     }
     return 0;
 }
