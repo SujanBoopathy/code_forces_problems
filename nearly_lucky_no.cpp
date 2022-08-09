@@ -1,11 +1,11 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    string s;
-    cin>>s;
+void main(){
+    string str;
+    cin>>str;
     int flag=0;
-    for(int i=0;i<s.length();i++){
+    for(int i=0;i<str.length();i++){
         if(s[i]=='4' || s[i]=='7')
         {
             flag+=1;
@@ -18,5 +18,4 @@ int main(){
     else{
         cout<<"NO"<<endl;
     }
-    return 0;
 }
