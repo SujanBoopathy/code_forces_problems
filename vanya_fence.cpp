@@ -2,15 +2,15 @@
 using namespace std;
 
 int main(){
-    int n,height,res=0;
-    cin>>n>>height;
+    int size,height,res=0;
+    cin>>size>>height;
 
-    int a[n];
-    for(int i=0;i<n;i++){
+    int a[size];
+    for(int i=0;i<size;i++){
         cin>>a[i];
     }
 
-    for(int i=0;i<n;i++){
+    for(int i=0;i<size;i++){
         if(a[i]<=height){
             res++;
         }
