@@ -1,24 +1,24 @@
 #include<iostream>
 using namespace std;
-void main(){
+int main(){
     int n,c=0;
     cin>>n;
-    string s;
+    string str;
     for(int i=0;i<n;i++){
-        cin>>s;
-        if(s=="Tetrahedron"){
+        cin>>str;
+        if(str=="Tetrahedron"){
             c+=4;
         }
-        else if(s=="Cube"){
+        else if(str=="Cube"){
             c+=6;
         }
-        else if(s=="Octahedron"){
+        else if(str=="Octahedron"){
             c+=8;
         }
-        else if(s=="Dodecahedron"){
+        else if(str=="Dodecahedron"){
             c+=12;
         }
-        else if(s=="Icosahedron"){
+        else if(str=="Icosahedron"){
             c+=20;
         }
         else{
@@ -26,6 +26,7 @@ void main(){
         }
     }
     cout<<c<<endl;
+    return 0;
     
 
 }
