@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
     int n,count=0;
-    cin>>n;
-    for(int i=0;i<n;i++){
+    cin>>size;
+    for(int i=0;i<size;i++){
         char temp[100];
         cin>>temp;
         if(strcmp(temp,"X++")==0) count++;
