@@ -5,10 +5,10 @@ int main(){
     int a=0,d=0;
     int size;
     cin>>size;
-    string s;
-    cin>>s;
+    string str;
+    cin>>str;
     for(int i=0;i<size;i++){
-        if(s[i]=='A') a++;
+        if(str[i]=='A') a++;
         else d++;
     }
     if(d<a){
